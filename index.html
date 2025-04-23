@@ -9,14 +9,14 @@
         <!-- =====BOX ICONS===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-        <title>Portfolio website complete</title>
+        <title>Portfolio</title>
     </head>
     <body>
         <!--===== HEADER =====-->
         <header class="l-header">
             <nav class="nav bd-grid">
                 <div>
-                    <a href="#" class="nav__logo">Marlon</a>
+                    <a href="#" class="nav__logo">Ashraf</a>
                 </div>
 
                 <div class="nav__menu" id="nav-menu">
@@ -39,15 +39,16 @@
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
                 <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Marlon</span><br> Web Designer</h1>
+                    <h1 class="home__title">Hi,<br>I'm  <span class="home__title-color">Ashraf</span><br> a
+                        <span class="home__title-color"> <span class="home__title-animate"></span></span></h1>
 
-                    <a href="#" class="button">Contact</a>
+                    <a href="assets/CV.pdf" class="button">My Resume</a>
                 </div>
 
                 <div class="home__social">
-                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/" target="_blank" class="home__social-icon"><i class='bx bxl-github'></i></a>
+                    <a href="https://twitter.com/" target="_blank" class="home__social-icon"><i class='bx bxl-twitter'></i></a>
                 </div>
 
                 <div class="home__img">
@@ -64,18 +65,69 @@
             </section>
 
             <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
+            <section class="about section" id="about">
+                <h2 class="section-title">About Me</h2>
 
                 <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="">
+                    <div class="about__photo-container">
+                        <div class="about__img-wrapper">
+                            <div class="about__shape rect-shape-1"></div>
+                            <div class="about__shape rect-shape-2"></div>
+                            <div class="about__shape rect-shape-3"></div>
+                            <img src="assets/img/about.jpg" alt="Ashraf profile photo" class="about__img">
+                        </div>
+                        <div class="about__education">
+                            <span class="about__education-degree">BSC.CSIT</span>
+                            
+                        </div>
                     </div>
                     
-                    <div>
-                        <h2 class="about__subtitle">I'am Marlon</h2>
-                        <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.</p>           
-                    </div>                                   
+                    <div class="about__data">
+                        <div class="about__info">
+                            <h2 class="about__subtitle">I'm <span class="about__name">Ashraf</span></h2>
+                            <h3 class="about__profession">Web Development Enthusiast</h3>
+                            <p class="about__text">A passionate Computer Science graduate with strong foundation in web development and programming. Eager to apply my technical skills and theoretical knowledge in a professional setting. Looking for entry-level opportunities to grow and contribute to innovative projects.</p>
+                            
+                            <div class="about__details">
+                                <div class="about__detail-item">
+                                    <i class='bx bx-check-circle about__detail-icon'></i>
+                                    <span>Strong foundation in HTML, CSS, and JavaScript</span>
+                                </div>
+                                <div class="about__detail-item">
+                                    <i class='bx bx-check-circle about__detail-icon'></i>
+                                    <span>Academic projects in web development</span>
+                                </div>
+                                <div class="about__detail-item">
+                                    <i class='bx bx-check-circle about__detail-icon'></i>
+                                    <span>Quick learner with problem-solving mindset</span>
+                                </div>
+                                <div class="about__detail-item">
+                                    <i class='bx bx-check-circle about__detail-icon'></i>
+                                    <span>Eager to work in collaborative environments</span>
+                                </div>
+                            </div>
+                            
+                            <div class="about__buttons">
+                                <a href="#contact" class="button about__button">Hire Me</a>
+                                <a href="assets/CV.pdf" class="button button-light about__button-light">Download CV</a>
+                            </div>
+                        </div>
+                        
+                        <div class="about__stats">
+                            <div class="about__stat">
+                                <h3 class="about__stat-number">5+</h3>
+                                <p class="about__stat-text">Academic<br>Projects</p>
+                            </div>
+                            <div class="about__stat">
+                                <h3 class="about__stat-number">2</h3>
+                                <p class="about__stat-text">Internship<br>Seeking</p>
+                            </div>
+                            <div class="about__stat">
+                                <h3 class="about__stat-number">91%</</h3>
+                                <p class="about__stat-text">Academic<br>Score</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -85,119 +137,303 @@
 
                 <div class="skills__container bd-grid">          
                     <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML5</span>
+                        <h2 class="skills__subtitle">Professional Skills</h2>
+                        <p class="skills__text">I specialize in full-stack web development with expertise in both frontend and backend technologies. My technical skills include:</p>
+                        
+                        <div class="skills__grid">
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-html5 skills__icon'></i>
+                                    <span class="skills__name">HTML5</span>
+                                </div>
                             </div>
-                            <div class="skills__bar skills__html">
-
+                            
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-css3 skills__icon'></i>
+                                    <span class="skills__name">CSS3</span>
+                                </div>
                             </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
+                            
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-javascript skills__icon'></i>
+                                    <span class="skills__name">JavaScript</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS3</span>
+                            
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-nodejs skills__icon'></i>
+                                    <span class="skills__name">Node.js</span>
+                                </div>
                             </div>
-                            <div class="skills__bar skills__css">
-                                
+                            
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-mongodb skills__icon'></i>
+                                    <span class="skills__name">MongoDB</span>
+                                </div>
                             </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
+                            
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-python skills__icon'></i>
+                                    <span class="skills__name">Python</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JAVASCRIPT</span>
+                            
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bx-code-alt skills__icon'></i>
+                                    <span class="skills__name">C</span>
+                                </div>
                             </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">UX/UI</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
+                            
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bx-data skills__icon'></i>
+                                    <span class="skills__name">SQL</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                     
                     <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                        <img src="assets/img/work3.jpg" alt="Skills illustration" class="skills__img">
                     </div>
                 </div>
             </section>
 
             <!--===== WORK =====-->
             <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
+                <h2 class="section-title">My Projects</h2>
+
+                <div class="work__filter">
+                    <button class="work__filter-button active" data-filter="all">All Projects</button>
+                    <button class="work__filter-button" data-filter="web">Web Apps</button>
+                    <button class="work__filter-button" data-filter="mobile">Applications</button>
+                    <button class="work__filter-button" data-filter="design">Systems</button>
+                </div>
 
                 <div class="work__container bd-grid">
-                    <a href="" class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work3.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work4.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
-                    </a>
+                    <div class="work__card" data-category="design">
+                        <div class="work__img-container">
+                            <img src="assets/img/AAS.webp" alt="Answer Analysis System" class="work__img">
+                            <div class="work__overlay">
+                                <div class="work__overlay-content">
+                                    <a href="#" class="work__overlay-icon"><i class='bx bx-link-external'></i></a>
+                                    <a href="https://github.com/ashraf/answer-analysis-system" class="work__overlay-icon"><i class='bx bxl-github'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work__data">
+                            <h3 class="work__title">Answer Analysis System</h3>
+                            <p class="work__description">An educational tool for teacher that evaluates student responses and provides detailed feedback for improvementtechniques.</p>
+                            <div class="work__actions">
+                                <a href="#" class="work__button">View Demo <i class='bx bx-right-arrow-alt'></i></a>
+                                <a href="https://github.com/ashraf/answer-analysis-system" class="work__button work__button-github"><i class='bx bxl-github'></i> Source Code</a>
+                            </div>
+                            <div class="work__tech">
+                                <span class="work__tech-item">Node.JS</span>
+                                <span class="work__tech-item">MongoDB</span>
+                                <span class="work__tech-item">HTML</span>
+                                <span class="work__tech-item">CSS</span>
+                                <span class="work__tech-item">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="work__card" data-category="web">
+                        <div class="work__img-container">
+                            <img src="assets/img/school.png" alt="School Website" class="work__img">
+                            <div class="work__overlay">
+                                <div class="work__overlay-content">
+                                    <a href="#" class="work__overlay-icon"><i class='bx bx-link-external'></i></a>
+                                    <a href="https://github.com/ashraf/school-website" class="work__overlay-icon"><i class='bx bxl-github'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work__data">
+                            <h3 class="work__title">School Website</h3>
+                            <p class="work__description">A comprehensive website for educational institutions with student portal, Notice Section , and parent communication features.</p>
+                            <div class="work__actions">
+                                <a href="https://uebschool.edu.np/" class="work__button">View Demo <i class='bx bx-right-arrow-alt'></i></a>
+                                <a href="https://github.com/ashraf/school-website" class="work__button work__button-github"><i class='bx bxl-github'></i> Source Code</a>
+                            </div>
+                            <div class="work__tech">
+                                <span class="work__tech-item">PHP</span>
+                                <span class="work__tech-item">HTMl</span>
+                                <span class="work__tech-item">CSS</span>
+                                <span class="work__tech-item">JS</span>
+                                <span class="work__tech-item">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="work__card" data-category="design">
+                        <div class="work__img-container">
+                            <img src="assets/img/home-library.webp" alt="Library Management System" class="work__img">
+                            <div class="work__overlay">
+                                <div class="work__overlay-content">
+                                    <a href="#" class="work__overlay-icon"><i class='bx bx-link-external'></i></a>
+                                    <a href="https://github.com/ashraf/library-system" class="work__overlay-icon"><i class='bx bxl-github'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work__data">
+                            <h3 class="work__title">Library Management System</h3>
+                            <p class="work__description">A full-stack application for managing book inventory, memberships, and borrowing processes.</p>
+                            <div class="work__actions">
+                                <a href="#" class="work__button">View Demo <i class='bx bx-right-arrow-alt'></i></a>
+                                <a href="https://github.com/ashraf/library-system" class="work__button work__button-github"><i class='bx bxl-github'></i> Source Code</a>
+                            </div>
+                            <div class="work__tech">
+                                <span class="work__tech-item">JavaScript</span>
+                                <span class="work__tech-item">Express</span>
+                                <span class="work__tech-item">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="work__card" data-category="mobile">
+                        <div class="work__img-container">
+                            <img src="assets/img/ecommerce.png" alt="E-commerce Platform" class="work__img">
+                            <div class="work__overlay">
+                                <div class="work__overlay-content">
+                                    <a href="#" class="work__overlay-icon"><i class='bx bx-link-external'></i></a>
+                                    <a href="https://github.com/ashraf/ecommerce-app" class="work__overlay-icon"><i class='bx bxl-github'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work__data">
+                            <h3 class="work__title">E-commerce Platform</h3>
+                            <p class="work__description">A responsive online store with product management, shopping cart, and payment integration.</p>
+                            <div class="work__actions">
+                                <a href="http://naaf.com.np/?i=1" class="work__button">View Demo <i class='bx bx-right-arrow-alt'></i></a>
+                                <a href="https://github.com/ashraf/ecommerce-app" class="work__button work__button-github"><i class='bx bxl-github'></i> Source Code</a>
+                            </div>
+                            <div class="work__tech">
+                                <span class="work__tech-item">wordpress</span>
+                                <span class="work__tech-item">PHP</span>
+                                <span class="work__tech-item">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
                 </div>
             </section>
 
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
+                <h2 class="section-title">Contact Me</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Enviar" class="contact__button button">
-                    </form>
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">Let's Work Together</h3>
+                        <p class="contact__text">Have a project in mind or want to discuss potential collaborations? I'm available for freelance work and open to full-time opportunities.</p>
+                        
+                        <div class="contact__info-cards">
+                            <div class="contact__card">
+                                <i class='bx bx-envelope contact__card-icon'></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <span>ashrafalimiya77@gmail.com</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact__card">
+                                <i class='bx bx-phone contact__card-icon'></i>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <span>+977 9825218281</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact__card">
+                                <i class='bx bx-map contact__card-icon'></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <span>Manahari-7, Makwanpur | Nepal</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact__card">
+                                <i class='bx bx-time contact__card-icon'></i>
+                                <div>
+                                    <h4>Availability</h4>
+                                    <span>Sunday - Saturday</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__social">
+                            <a href="https://github.com/ashraf" class="contact__social-link">
+                                <i class='bx bxl-github'></i>
+                            </a>
+                            <a href="https://linkedin.com/in/ashraf" class="contact__social-link">
+                                <i class='bx bxl-linkedin'></i>
+                            </a>
+                            <a href="https://twitter.com/ashraf" class="contact__social-link">
+                                <i class='bx bxl-twitter'></i>
+                            </a>
+                            <a href="https://instagram.com/ashraf" class="contact__social-link">
+                                <i class='bx bxl-instagram'></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__form-container">
+                        <h3 class="contact__subtitle">Send Me a Message</h3>
+                        <form action="" class="contact__form">
+                            <div class="contact__form-div">
+                                <input type="text" placeholder="Your Name" class="contact__input">
+                            </div>
+                            
+                            <div class="contact__form-div">
+                                <input type="email" placeholder="Your Email" class="contact__input">
+                            </div>
+                            
+                            <div class="contact__form-div">
+                                <input type="text" placeholder="Subject" class="contact__input">
+                            </div>
+                            
+                            <div class="contact__form-div contact__form-area">
+                                <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" class="contact__input"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="button contact__button">
+                                Send Message
+                                <i class='bx bx-send contact__button-icon'></i>
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </section>
         </main>
 
         <!--===== FOOTER =====-->
         <footer class="footer">
-            <p class="footer__title">Marlon</p>
+            <p class="footer__title">Ashraf</p>
             <div class="footer__social">
-                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://www.facebook.com/Ashraf.ali5231" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Ashraf5588" class="footer__icon"><i class='bx bxl-github'></i></a>
             </div>
-            <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p>
+            <p class="footer__copy">&#169; 2025 Ashraf. All rights reserved</p>
         </footer>
 
 
         <!--===== SCROLL REVEAL =====-->
         <script src="https://unpkg.com/scrollreveal"></script>
+        
+        <!--===== TYPED JS =====-->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>

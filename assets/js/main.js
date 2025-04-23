@@ -1,25 +1,30 @@
 /*===== MENU SHOW =====*/ 
-const showMenu = (toggleId, navId) =>{
+const showMenu = (toggleId, navId) => {
     const toggle = document.getElementById(toggleId),
-    nav = document.getElementById(navId)
+    nav = document.getElementById(navId);
 
-    if(toggle && nav){
-        toggle.addEventListener('click', ()=>{
-            nav.classList.toggle('show')
-        })
+    if(toggle && nav) {
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('show');
+        });
     }
 }
-showMenu('nav-toggle','nav-menu')
+showMenu('nav-toggle','nav-menu');
 
-/*==================== REMOVE MENU MOBILE ====================*/
-const navLink = document.querySelectorAll('.nav__link')
+/*===== ACTIVE AND REMOVE MENU =====*/
+const navLinks = document.querySelectorAll('.nav__link');   
 
-function linkAction(){
-    const navMenu = document.getElementById('nav-menu')
-    // When we click on each nav__link, we remove the show-menu class
-    navMenu.classList.remove('show')
+function linkAction() {
+    // Active link
+    navLinks.forEach(n => n.classList.remove('active-link'));
+    this.classList.add('active-link');
+    
+    // Remove menu mobile
+    const navMenu = document.getElementById('nav-menu');
+    navMenu.classList.remove('show');
 }
-navLink.forEach(n => n.addEventListener('click', linkAction))
+
+navLinks.forEach(n => n.addEventListener('click', linkAction));
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
@@ -45,13 +50,84 @@ window.addEventListener('scroll', scrollActive)
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
     origin: 'top',
-    distance: '60px',
-    duration: 2000,
-    delay: 200,
-//     reset: true
+    distance: '80px',
+    duration: 1000,
+    reset: true
 });
 
-sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
-sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
-sr.reveal('.home__social-icon',{ interval: 200}); 
-sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+/*SCROLL HOME*/
+sr.reveal('.home__title',{});
+sr.reveal('.button',{delay: 200});
+sr.reveal('.home__img',{delay: 400});
+sr.reveal('.home__social-icon',{ interval: 200});
+
+/*SCROLL ABOUT*/
+sr.reveal('.about__img',{});
+sr.reveal('.about__subtitle',{delay: 200});
+sr.reveal('.about__text',{delay: 400});
+
+/*SCROLL SKILLS*/
+sr.reveal('.skills__subtitle',{});
+sr.reveal('.skills__text',{delay: 200});
+sr.reveal('.skills__data',{interval: 100});
+sr.reveal('.skills__img',{delay: 400});
+
+/*SCROLL WORK*/
+sr.reveal('.work__card',{interval: 200});
+
+/*SCROLL CONTACT*/
+sr.reveal('.contact__input',{interval: 200});
+
+/*===== TYPED.JS ANIMATION =====*/
+document.addEventListener('DOMContentLoaded', function() {
+    if(window.Typed) {
+        let options = {
+            strings: ['Web Developer', 'Freelancer', 'Teacher'],
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop: true
+        };
+        
+        const typed = new Typed('.home__title-animate', options);
+    }
+});
+
+/* ===== SCROLL HEADER EFFECT ===== */
+window.addEventListener('scroll', function() {
+    const header = document.querySelector('.l-header');
+    // When scroll is greater than 80vh, add the scroll-header class
+    if(this.scrollY >= 80) {
+        header.classList.add('scroll-header');
+    } else {
+        header.classList.remove('scroll-header');
+    }
+});
+
+/* ===== PROJECT FILTER ===== */
+document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.work__filter-button');
+    
+    if(filterButtons.length > 0) {
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active to clicked button
+                this.classList.add('active');
+                
+                const filterValue = this.getAttribute('data-filter');
+                const items = document.querySelectorAll('.work__card');
+                
+                items.forEach(item => {
+                    if(filterValue === 'all') {
+                        item.style.display = 'block';
+                    } else if(item.classList.contains(filterValue)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    }
+});
